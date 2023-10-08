@@ -42,15 +42,15 @@ keytool -import -alias isCertificate -keystore cacerts -file <IS_CERTIFICATE_FIL
 - Update the following configuration. 
   
 ```yaml
- provider:
-    host: <server-host-name> #Aurora support to provide
-  
-  client:
-    client-id: <application-client-id> #Aurora support to provide
-    client-secret: <application-client-secret> #Aurora support to provide
-    post-logout-uri: http://localhost:8080/login
-    scope: openid
-    authorization-grant-type: authorization_code
+provider:
+  host: <server-host-name> #Aurora support to provide
+
+client:
+  client-id: <application-client-id> #Aurora support to provide
+  client-secret: <application-client-secret> #Aurora support to provide
+  post-logout-uri: http://localhost:8080/login
+  scope: openid
+  authorization-grant-type: authorization_code
 
 spring:
   security:
