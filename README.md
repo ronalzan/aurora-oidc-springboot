@@ -42,6 +42,7 @@ keytool -import -alias isCertificate -keystore cacerts -file <IS_CERTIFICATE_FIL
 - Update the following configuration. 
   
 ```yaml
+
 provider:
   host: <server-host-name> #Aurora support to provide
 
