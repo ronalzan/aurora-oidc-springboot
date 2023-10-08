@@ -51,6 +51,21 @@ keytool -import -alias isCertificate -keystore cacerts -file <IS_CERTIFICATE_FIL
     post-logout-uri: http://localhost:8080/login
     scope: openid
     authorization-grant-type: authorization_code
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            client-name : Aurora
+            client-id: <application-client-id> #Aurora support to provide
+            client-secret: <application-client-secret> #Aurora support to provide
+            authorization-grant-type: authorization_code
+            scope: openid
+        provider:
+          wso2:
+            issuer-uri: <aurora issuer> #Aurora support to provide
  
 ```
 
