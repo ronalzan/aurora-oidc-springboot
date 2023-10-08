@@ -1,0 +1,29 @@
+provider:
+  host: https://sitenv.workonarion.com/
+
+client:
+  client-id: 3AsiW8U47eY0qKY6juZ3wecr6FEa #Change client-id
+  client-secret: 1xz5qxxltr2KWfe6ctW8s664UC4aa # Change client-secret
+  post-logout-uri: http://localhost:8080/login
+  scope: openid
+  authorization-grant-type: authorization_code
+
+
+#No need to change the following configurations
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            client-name : Aurora
+            client-id: 3AsiW8U47eY0qKY6juZ3wecr6FEa
+            client-secret: 1xz5qxxltr2KWfe6ctW8s664UC4a
+            authorization-grant-type: authorization_code
+            scope: openid
+        provider:
+          wso2:
+            issuer-uri: https://sitenv.workonarion.com/oauth2/token
+
+  thymeleaf:
+    cache: false
