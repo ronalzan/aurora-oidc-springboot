@@ -32,7 +32,7 @@ Aurora developer is responsible for this step.
 3. Import the certificate into the cacerts file using the following:
 
 ```shell
-keytool -import -alias isCertificate -keystore cacerts -file <IS_CERTIFICATE_FILE_LOCATION>
+keytool -import -alias auroraCertificate -keystore cacerts -file <AURORA_CERTIFICATE_FILE_LOCATION>
 ```
                         
 ### Application Configuration
