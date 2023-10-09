@@ -1,4 +1,4 @@
-# Spring Boot, SAML, and Aurora
+# Spring Boot, OIDC, and Aurora
 
 A Spring Boot example app that shows how to implement single sign-on (SSO) with OpenID Connect (OIDC) and Aurora.
 
